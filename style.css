@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #E1E1E6;
+  --secundary-color: #C4C4CC;
+  --terciary-color: white;
+
+  --button-txt-color: #02799D;
+}
+
+body {
+  font-size: 1.6rem;
+
+  position: relative;
+}
+
+body,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+p {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 125%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 160%;
+}
+
+/* bg pages */
+
+.bg-home {
+  background: url('./assets/mountains-universe-1.jpg') no-repeat;
+}
+
+.bg-universe {
+  background: url('./assets/mountains-universe-2.jpg') no-repeat;
+}
+
+.bg-exploration {
+  background: url('./assets/mountains-universe-3.jpg') no-repeat;
+}
+
+.bg-home,
+.bg-universe,
+.bg-exploration {
+  background-position: center;
+  background-size: cover;
+}
+
+/* header */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 12.2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+a {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: var(--secundary-color);
+  text-decoration: none;
+}
+
+a.selected {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--terciary-color);
+}
+
+.container {
+  max-width: 128rem;
+  margin-inline: auto;
+}
+
+/* main pages */
+
+main {
+  height: 100vh;
+
+  padding-top: calc(12.2rem + 6rem);
+}
+
+/* home */
+
+.container.home {
+  height: calc(100vh - 20rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  margin-top: -20%;
+}
+
+button {
+  border-radius: .5rem;
+  border: .1rem solid var(--terciary-color);
+  background: transparent;
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: var(--terciary-color);
+
+  padding: 1.2rem 3.2rem;
+  margin-top: 2.4rem;
+
+  transition: all 300ms;
+}
+
+button:hover {
+  background-color: var(--terciary-color);
+
+  color: var(--button-txt-color);
+}
+
+/* other pages */
+
+main p {
+  width: 65rem;
+  margin-top: 1.6rem;
+}
